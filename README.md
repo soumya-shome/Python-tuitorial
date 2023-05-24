@@ -1,6 +1,6 @@
 # Python tuitorial
  
-## Basics  [ bascics.py ](basics.py)
+## Basics  [ basics.py ](basics.py)
 
 Literals / Datatypes<br>
 |-- Integer => int => int()<br>
