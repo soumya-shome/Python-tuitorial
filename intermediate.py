@@ -1,21 +1,5 @@
-#example of list
-#list is mutable
-#list is ordered
-#list can be nested
-#list can be accessed by index
-#list can be sliced
-#list can be iterated over
-#list can be sorted
-#list can be reversed
-#list can be concatenated
-#list can be extended
-#list can be copied
-#list can be cleared
-#list can be deleted
-#list can be created using list() constructor
-#list can be created using list comprehension
+#list is mutable, ordered, iterable, sliceable, can contain duplicate values.
 
-#writing a list
 #list can be written in two ways
 #1. using square brackets
 #2. using list() constructor
@@ -31,6 +15,7 @@ print(type(x)) #<class 'list'>
 y=list([1,2,3,4,5])
 print(y) #[1, 2, 3, 4, 5]
 print(type(y)) #<class 'list'>
+
 
 #creating an empty list
 #list_name = []

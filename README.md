@@ -8,7 +8,7 @@ Literals / Datatypes<br>
 |-- String => str => str()<br>
 |-- Boolean => bool => bool()<br>
 
-### print()
+### 1.print()
 <p>
 -using end and sep </br>
 -using format </br>
@@ -16,13 +16,13 @@ Literals / Datatypes<br>
 -using % </br>
 </p>
 
-### input()
+### 2.input()
 <p>
 -Using input() </br>
 -Using eval() </br>
 </p>
 
-### Operators
+### 3.Operators
 <p>
 -Arithmetic Operators </br>
 -Assignment Operators </br>
@@ -33,7 +33,7 @@ Literals / Datatypes<br>
 -Bitwise Operators </br>
 </p>
 
-### Control Flow
+### 4.Control Flow
 <p>
 -If-else </br>
 -For </br>
@@ -43,14 +43,14 @@ Literals / Datatypes<br>
 -Pass </br>
 </p>
 
-### range()
+### 5.range()
 <p>
 -Using range() </br>
 -Using range() with step </br>
 -Using range() with start, stop and step </br>
 </p>
 
-### List Comprehension
+### 6.List Comprehension
 <p>
 -Using List Comprehension </br>
 -Using List Comprehension with if </br>
@@ -59,7 +59,11 @@ Literals / Datatypes<br>
 -Using List Comprehension with nested if-else </br>
 </p>
 
-
+### 7. Concatenation and Replication
+<p>
+-Concatenation
+-Replication
+</p>
 
 ## DSA and OOPs [ intermediate.py ](intermediate.py)
 

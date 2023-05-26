@@ -1,5 +1,5 @@
 #print hello world
-print("Hello World")
+print("Hello World") #Hello World
 
 #declare variable  of each type
 x = 1
@@ -8,49 +8,61 @@ z = "1.0"
 a = True
 
 #check type of each variable
-print(type(x))
-print(type(y))
-print(type(z))
-print(type(a))
+print(type(x)) #<class 'int'>
+print(type(y)) #<class 'float'>
+print(type(z)) #<class 'str'>
+print(type(a)) #<class 'bool'>
 
 #convert variable to other type
-print(float(x))
-print(int(y))
-print(int(z))
-print(str(x))
-print(bool(x))
+print(float(x)) #1.0
+print(int(y)) #1
+print(int(z)) #ValueError: invalid literal for int() with base 10: '1.0'
+print(str(x)) #1
+print(bool(x)) #True
 
 #------------------------------------------------------------------------
 
 #print statement using format{}
-print("x is {} and y is {}".format(x,y))
+print("x is {} and y is {}".format(x,y)) #x is 1 and y is 1.0
 
 #print statement using f-string
-print(f"x is {x} and y is {y}")
+print(f"x is {x} and y is {y}") #x is 1 and y is 1.0
 
 #print statement using % operator
-print("x is %d and y is %f"%(x,y))
+print("x is %d and y is %f"%(x,y)) #x is 1 and y is 1.000000
 
 #print statement with multiple lines
 print("""this is a
         multiline
-        statement""")
-print("this is a \nmultiline \nstatement")
+        statement""")  
+#this is a
+#multiline
+#statement
+
+print("this is a \nmultiline \nstatement") 
+#this is a
+#multiline
+#statement
 
 #print statement with end
-print("this is a", end=" ")
+print("this is a", end=" ") 
+#this is a
 
-print("single line statement")
+
+#print statement with sep
+print("this", "is", "a", "statement", sep="-") #this-is-a-statement
+
+print("single line statement") #single line statement
 
 #------------------------------------------------------------------------
 
 #take a inout from the user and print it
-x = input("Enter a number: ")
-print(x)
+x = input("Enter a number: ") # Enter a number: 1
+print(x) #1
 
 #take a inout from the user and print it using eval()
-x = eval(input("Enter a number: "))
-print(x)
+x = eval(input("Enter a number: ")) # Enter a number: 1
+print(x) #1
 
 #------------------------------------------------------------------------
 
@@ -64,7 +76,7 @@ print(2**3) #exponent (8)
 print(2%3) #modulus (2)
 
 #example of each assignment operator
-x = 1 #equal to
+x = 1 #equal to 
 x += 1 #addition
 x -= 1 #subtraction
 x *= 1 #multiplication
@@ -112,6 +124,7 @@ if 2==3:
     print("2 is equal to 3")
 else:
     print("2 is not equal to 3")
+#Output: 2 is not equal to 3
 
 #example of if-elif-else statement
 if 2==3:
@@ -120,6 +133,7 @@ elif 2==2:
     print("2 is equal to 2")
 else:
     print("2 is not equal to 3")
+#Output: 2 is equal to 2
 
 #example of nested if-else statement
 if 2==3:
@@ -129,6 +143,7 @@ else:
         print("2 is equal to 2")
     else:
         print("2 is not equal to 3")
+#Output: 2 is equal to 2
 
 #example of for loop
 for i in range(5):
@@ -174,3 +189,23 @@ for i in range(5,1,-2):
 x = [i for i in range(5)]
 print(x) #[0, 1, 2, 3, 4]
 
+#--------------------------------------------------------------
+
+#example of concatenation
+x = [1,2,3]
+y = [4,5,6]
+print(x+y) #[1, 2, 3, 4, 5, 6]
+
+#example of repetition
+x = [1,2,3]
+print(x*2) #[1, 2, 3, 1, 2, 3]
+
+#example of string concatenation
+x = "hello"
+y = "world"
+print(x+y) #helloworld
+print(x+" "+y) #hello world
+
+#example of string repetition
+x = "hello"
+print(x*2) #hellohello
