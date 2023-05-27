@@ -8,92 +8,25 @@ Literals / Datatypes<br>
 |-- String => str => str()<br>
 |-- Boolean => bool => bool()<br>
 
-### 1.print()
-<p>
--using end and sep </br>
--using format </br>
--using f-string </br>
--using % </br>
-</p>
 
-### 2.input()
-<p>
--Using input() </br>
--Using eval() </br>
-</p>
+| Operators | Description |
+| --- | --- |
+| print() | 1. using end and sep <br> 2. using format <br> 3. using f-string <br> 3. using %  |
+| input() | 1. using input() <br> 2. using eval() |
+| type() | 1. using type()  |
+| Operators | <br> 1. Arithmetic Operators <br> 2. Assignment Operators <br> 3. Comparison Operators <br> 4. Logical Operators <br> 5. Identity Operators <br> 6. Membership Operators <br> 7. Bitwise Operators |
+| Control Flow | <br> 1. If-else <br> 2. For <br> 3. While <br> 4. Break <br> 5. Continue <br> 6. Pass|
+| range() |  <br> 2. using range() <br> 2. using range() with step  <br> 2. using range() with start, stop and step |
+| List Comprehension | <br> 1. using List Comprehension <br> 2. >using List Comprehension with if <br> 3. using List Comprehension with if-else <br> 4. using List Comprehension with nested if <br> 5. using List Comprehension with nested if-else |
+|Concatenation and Replication |  <br> 2. Concatenation <br> 2. Replication |
 
-### 3.Operators
-<p>
--Arithmetic Operators </br>
--Assignment Operators </br>
--Comparison Operators </br>
--Logical Operators </br>
--Identity Operators </br>
--Membership Operators </br>
--Bitwise Operators </br>
-</p>
+## DSA and OOPs 
 
-### 4.Control Flow
-<p>
--If-else </br>
--For </br>
--While </br>
--Break </br>
--Continue </br>
--Pass </br>
-</p>
+| | Create| Add| Remove  | Modify  | Access | Others  |
+| --- | --- | --- | --- | --- | --- | --- |
+| [**List**](list.py)            | - using [ ]<br>- using list() constructor | - using append( element )<br>- using insert( index, element )<br>- using extend( iterable ) | - using pop()<br>- using pop( index )<br>- using remove( element )<br>- using clear() | - using index<br>- using slice<br>- using slice with step | - using index<br>- using slice<br>- using slice with step | - Iteration<br>- len()<br>- count( element )<br>- sort()<br>- reverse()<br>- copy()<br>- max()<br>- min()<br>- sum()<br>- any()<br>- all()<br>- enumerate()<br>- zip()<br>- list( iterable )<br>- cmp()<br>- filter()<br>- map()<br>- reduce()<br>- List Comprehension |
+| [**Tuple**](tuple.py)           | - using ( )<br>- using tuple() constructor | It is immutable | It is immutable | It is immutable | - using index<br>- using slice<br>- using slice with step<br>- using stride | -count( element )<br>- using index( element ) - Iteration<br>- len()<br>- max()<br>- min()<br>- sum()<br>- any()<br>- all()<br>- enumerate()<br>- zip()<br>- tuple( iterable )<br>- cmp()<br>- filter()<br>- map()<br>- reduce()<br>- Tuple Comprehension |
 
-### 5.range()
-<p>
--Using range() </br>
--Using range() with step </br>
--Using range() with start, stop and step </br>
-</p>
-
-### 6.List Comprehension
-<p>
--Using List Comprehension </br>
--Using List Comprehension with if </br>
--Using List Comprehension with if-else </br>
--Using List Comprehension with nested if </br>
--Using List Comprehension with nested if-else </br>
-</p>
-
-### 7. Concatenation and Replication
-<p>
--Concatenation
--Replication
-</p>
-
-## DSA and OOPs [ intermediate.py ](intermediate.py)
-
-<table>
-    <thead>
-        <tr>
-            <th>Data Structures</th>
-            <th>Create</th>
-            <th>Add</th>
-            <th>Remove</th>
-            <th>Access</th>
-            <th>Modify</th>
-            <th>Loop</th>
-            <th>Sort</th>
-            <th>Indexing</th>
-        </tr>
-    <tbody>
-        <tr>
-            <td>List</td>
-            <td>1. using square brackets <br> 2. using list() constructor</td>
-            <td>1. list_name.append(element) <br> 2. list_name.insert(index, element) <br> 3. list_name.extend(iterable)</td>
-            <td>1. list_name.pop(index) <br> 2. list_name.remove(element) <br> 3. list_name.clear()</td>
-            <td>1. list_name[index] <br> 2. list_name[start:stop] <br> 3. list_name[start:stop:step]</td>
-            <td>1. list_name[index] = new_element <br> 2. list_name[start:stop] = new_list <br> 3. list_name[start:stop:step] = new_list</td>
-            <td>1. for element in list_name: <br> 2. for index, element in enumerate(list_name):</td>
-            <td>1. list_name.sort() <br> 2. list_name.sort(reverse=True) <br> 3. list_name.sort(key=func)</td>
-            <td>1. list_name.index(element) <br> 2. list_name.index(element, start) <br> 3. list_name.index(element, start, stop)</td>
-        </tr>
-    </tbody>
-</table>
 ### Data Structures
 <p>
 -List </br>
