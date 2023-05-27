@@ -67,6 +67,33 @@ Literals / Datatypes<br>
 
 ## DSA and OOPs [ intermediate.py ](intermediate.py)
 
+<table>
+    <thead>
+        <tr>
+            <th>Data Structures</th>
+            <th>Create</th>
+            <th>Add</th>
+            <th>Remove</th>
+            <th>Access</th>
+            <th>Modify</th>
+            <th>Loop</th>
+            <th>Sort</th>
+            <th>Indexing</th>
+        </tr>
+    <tbody>
+        <tr>
+            <td>List</td>
+            <td>1. using square brackets <br> 2. using list() constructor</td>
+            <td>1. list_name.append(element) <br> 2. list_name.insert(index, element) <br> 3. list_name.extend(iterable)</td>
+            <td>1. list_name.pop(index) <br> 2. list_name.remove(element) <br> 3. list_name.clear()</td>
+            <td>1. list_name[index] <br> 2. list_name[start:stop] <br> 3. list_name[start:stop:step]</td>
+            <td>1. list_name[index] = new_element <br> 2. list_name[start:stop] = new_list <br> 3. list_name[start:stop:step] = new_list</td>
+            <td>1. for element in list_name: <br> 2. for index, element in enumerate(list_name):</td>
+            <td>1. list_name.sort() <br> 2. list_name.sort(reverse=True) <br> 3. list_name.sort(key=func)</td>
+            <td>1. list_name.index(element) <br> 2. list_name.index(element, start) <br> 3. list_name.index(element, start, stop)</td>
+        </tr>
+    </tbody>
+</table>
 ### Data Structures
 <p>
 -List </br>
