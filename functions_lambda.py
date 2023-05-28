@@ -109,17 +109,17 @@ print(str) #Hello World
 print(x) #20
 
 #function documentation
-def printme(str):
+def printme2(str):
     """This prints a passed string into this function"""
     print(str)
     return
-printme("I'm first call to user defined function!") #I'm first call to user defined function!
-print(printme.__doc__) #This prints a passed string into this function
+printme2("I'm first call to user defined function!") #I'm first call to user defined function!
+print(printme2.__doc__) #This prints a passed string into this function
 
 #-----------------Lambda----------------
 
 #using lambda
-def sum(arg1, arg2):
+def sum3(arg1, arg2):
     total = arg1 + arg2
     print("Inside the function local total: ", total)
     return total
@@ -133,13 +133,7 @@ lambda x: x*x
 lambda x, y: x+y
 lambda: 'Hello World'
 
-#lambda with filter()
-
-
-
-
-
-
+#lambda functions
 
 #lambda with no arguments
 sum = lambda arg1, arg2: arg1 + arg2
@@ -152,7 +146,18 @@ print(cube(7)) #343
 sum = lambda arg1, arg2: arg1 + arg2
 print("Value of total: ", sum(10,20)) #Value of total:  30
 
+#filter() with lambda
+my_list = [1,5,4,6,8,11,3,12]
+new_list = list(filter(lambda x: (x%2 == 0), my_list))
+print(new_list) #[4, 6, 8, 12]
 
-2. using lambda with filter()
-3. using lambda with map()
-4. using lambda with reduce()
+#map() with lambda
+my_list = [1,5,4,6,8,11,3,12]
+new_list = list(map(lambda x: x*2, my_list))
+print(new_list) #[2, 10, 8, 12, 16, 22, 6, 24]
+
+#reduce() with lambda
+from functools import reduce
+my_list = [1,5,4,6,8,11,3,12]
+product = reduce((lambda x, y: x*y), my_list)
+print(product) #2799360
