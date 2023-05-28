@@ -61,7 +61,7 @@ Literals / Datatypes<br>
 
 |  | Description |
 | --- | --- |
-|Functions | 1.Function</br> 2.Function Arguments </br>3.Default Arguments </br>4.Keyword Arguments </br>5.Variable Length Arguments </br>6.Anonymous Function </br>7.Recursion |
+|Function  s | 1.Function</br> 2.Function Arguments </br>3.Default Arguments </br>4.Keyword Arguments </br>5.Variable Length Arguments </br>6.Anonymous Function </br>7.Recursion |
 |Lambda | 1. using lambda </br> 2. using lambda with filter() </br> 3. using lambda with map() </br> 4. using lambda with reduce() |
 |Map | 1. using map() </br> 2. using map() with lambda </br> 3. using map() with multiple iterables |
 |Filter | 1. using filter() </br> 2. using filter() with lambda </br> 3. using filter() with multiple iterables |
