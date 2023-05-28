@@ -61,13 +61,10 @@ Literals / Datatypes<br>
 
 |  | Description |
 | --- | --- |
-|Function  s | 1.Function</br> 2.Function Arguments </br>3.Default Arguments </br>4.Keyword Arguments </br>5.Variable Length Arguments </br>6.Anonymous Function </br>7.Recursion |
-|Lambda | 1. using lambda </br> 2. using lambda with filter() </br> 3. using lambda with map() </br> 4. using lambda with reduce() |
-|Map | 1. using map() </br> 2. using map() with lambda </br> 3. using map() with multiple iterables |
-|Filter | 1. using filter() </br> 2. using filter() with lambda </br> 3. using filter() with multiple iterables |
-|Reduce | 1. using reduce() </br> 2. using reduce() with lambda </br> 3. using reduce() with multiple iterables |
-|Decorators | 1. using @decorator </br> 2. using @decorator with arguments </br> 3. using @decorator with arguments and return value </br> 4. using @decorator with arguments and return value |
-|Generators | 1. using yield </br> 2. using yield with arguments </br> 3. using yield with arguments and return value </br> 4. using yield with arguments and return value |
+|[Functions](functions_lambda.py) | 1.Function</br> 2.Function Arguments </br>3.Default Arguments </br>4.Keyword Arguments </br>5.Variable Length Arguments </br>6.Anonymous Function </br>7.Recursion |
+|[Lambda](functions_lambda.py) | 1. using lambda </br> 2. using lambda with filter() </br> 3. using lambda with map() </br> 4. using lambda with reduce() |
+|[Decorators](decorators.py) | 1. using @decorator </br> 2. using @decorator with arguments </br> 3. using @decorator with arguments and return value |
+|[Generators](generators.py) | 1. using yield </br> 2. using yield with arguments </br> 3. using yield with arguments and return value |
 |Closures | 1. using nested function </br> 2. using nested function with arguments </br> 3. using nested function with arguments and return value </br> 4. using nested function with arguments and return value |
 |Iterators | 1. using iter() </br> 2. using iter() with arguments </br> 3. using iter() with arguments and return value </br> 4. using iter() with arguments and return value |
 |Classes and Objects | 1. Class </br> 2. Object </br> 3. Constructor </br> 4. Self </br> 5. Instance Variables </br> 6. Class Variables </br> 7. Static Methods </br> 8. Inheritance </br> 9. Overriding Methods </br> 10. Data Hiding |
