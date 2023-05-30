@@ -1,11 +1,7 @@
 #generators in python
-#generator is a function that returns an object (iterator) which we can iterate over (one value at a time)
-#generator function contains one or more yield statement
-#when called, it returns an object (iterator) but does not start execution immediately
-#methods like __iter__() and __next__() are implemented automatically
-#once the function yields, the function is paused and the control is transferred to the caller
-#local variables and their states are remembered between successive calls
-#finally, when the function terminates, StopIteration is raised automatically on further calls
+#def generator_name(arg):
+#    # statements
+#    yield something
 
 
 #simple generator function

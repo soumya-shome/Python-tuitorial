@@ -65,8 +65,8 @@ Literals / Datatypes<br>
 |[Lambda](functions_lambda.py) | 1. using lambda </br> 2. using lambda with filter() </br> 3. using lambda with map() </br> 4. using lambda with reduce() |
 |[Decorators](decorators.py) | 1. using @decorator </br> 2. using @decorator with arguments </br> 3. using @decorator with arguments and return value |
 |[Generators](generators.py) | 1. using yield </br> 2. using yield with arguments </br> 3. using yield with arguments and return value |
-|Closures | 1. using nested function </br> 2. using nested function with arguments </br> 3. using nested function with arguments and return value </br> 4. using nested function with arguments and return value |
-|Iterators | 1. using iter() </br> 2. using iter() with arguments </br> 3. using iter() with arguments and return value </br> 4. using iter() with arguments and return value |
+|[Closures](closures.py) | 1. using nested function </br> 2. using nested function with arguments </br> 3. using nested function with arguments and return value </br> 4. using nested function with arguments and return value |
+|[Iterators](iterators.py) | 1. using iter() </br> 2. using iter() with arguments </br> 3. using iter() with arguments and return value |
 |Classes and Objects | 1. Class </br> 2. Object </br> 3. Constructor </br> 4. Self </br> 5. Instance Variables </br> 6. Class Variables </br> 7. Static Methods </br> 8. Inheritance </br> 9. Overriding Methods </br> 10. Data Hiding |
 |Modules | 1. Importing Modules </br> 2. Importing from Modules </br> 3. Importing Specific Items </br> 4. Importing with Alias </br> 5. Importing Everything |
 |File Handling | 1. Opening a File </br> 2. Reading a File </br> 3. Writing to a File </br> 4. Appending to a File </br> 5. Closing a File |
