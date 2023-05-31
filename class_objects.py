@@ -320,3 +320,241 @@ class Demo1:
 ob1 = Demo1()
 print(ob1.add('init',10,20,30)) #60
 print(ob1.add('str','Hello','World')) #HelloWorld
+
+#operator overloading
+
+#operator overloading is the ability to define operators for user defined classes
+#operator overloading is achieved by using special methods
+
+#special methods
+#special methods are also called as magic methods
+#special methods are used to overload operators
+#special methods are always preceded and followed by double underscores
+
+#syntax for special methods
+#__method_name__(self, other)
+
+#overloading + operator
+class Demo2:
+    def __init__(self,x):
+        self.x=x
+    def __add__(self, other):
+        return self.x + other.x
+ob1 = Demo2(10)
+ob2 = Demo2(20)
+print(ob1 + ob2) #30
+
+#__add__(self,other) => X+Y => overloads + operator => Add X and Y
+#__sub__(self,other) => X-Y => overloads - operator => Subtract X and Y
+#__mul__(self,other) => X*Y => overloads * operator => Multiply X and Y
+#__truediv__(self,other) => X/Y => overloads / operator => Divide X and Y
+#__floordiv__(self,other) => X//Y => overloads // operator => Floor Divide X and Y
+#__mod__(self,other) => X%Y => overloads % operator => Modulus X and Y
+#__neg__(self,other) => -X => -overloads => Arithmatic Negation of X
+#__pow__(self,other) => X**Y => overloads ** operator => Power X and Y
+
+#__eq__(self,other) => X==Y => overloads == operator => is X equal to Y?
+#__ne__(self,other) => X!=Y => overloads != operator => is X not equal to Y?
+#__lt__(self,other) => X<Y => overloads < operator => is X less than Y?
+#__gt__(self,other) => X>Y => overloads > operator => is X greater than Y?
+#__le__(self,other) => X<=Y => overloads <= operator => is X less than or equal to Y?
+#__ge__(self,other) => X>=Y => overloads >= operator => is X greater than or equal to Y?
+
+#__str__(self) => str(X) => overloads str() function => String representation of X
+#__len__(self) => len(X) => overloads len() function => Length of X
+#__abs__(self) => abs(X) => overloads abs() function => Absolute value of X
+#__bool__(self) => bool(X) => overloads bool() function => Boolean value of X
+#__float__(self) => float(X) => overloads float() function => Floating point value of X
+#__int__(self) => int(X) => overloads int() function => Integer value of X
+#__complex__(self) => complex(X) => overloads complex() function => Complex value of X
+#__itr__(self) => itr(X) => overloads itr() function => Iterator of X
+#__hash__(self) => hash(X) => overloads hash() function => Hash value of X
+
+class CmpOprDemo:
+    def __init__(self,x):
+        self.x=x
+
+    def __lt__(self, other):
+        print(' The value of Ob1 : ',self.x)
+        print(' The value of Ob2 : ',other.x)
+        print(' The value of Ob1 < Ob2 : ',end='')
+        return self.x < other.x
+    
+    def __gt__(self, other):
+        print(' The value of Ob1 > Ob2 : ',end='')
+        return self.x > other.x
+    
+    def __le__(self, other):
+        print(' The value of Ob1 <= Ob2 : ',end='')
+        return self.x <= other.x
+    
+    def __ge__(self, other):
+        print(' The value of Ob1 >= Ob2 : ',end='')
+        return self.x >= other.x
+    
+ob1 = CmpOprDemo(20)
+ob2 = CmpOprDemo(30)
+print(ob1 < ob2) #True
+print(ob1 > ob2) #False
+print(ob1 <= ob2) #True
+
+#inheritance
+
+#inheritance is the ability to inherit the properties of one class into another class
+#inheritance is achieved by using the keyword 'class' followed by the name of the class and the name of the parent class
+#inheritance is also called as subclassing
+#the class which inherits the properties of another class is called as child class or derived class
+#the class whose properties are inherited by another class is called as parent class or base class
+#the child class can access the properties of the parent class
+#the child class can also have its own properties
+
+#types of inheritance
+# 1.single inheritance
+# 2.multiple inheritance
+# 3.multilevel inheritance
+
+#syntax for inheritance
+#class child_class_name(parent_class_name):
+#    pass
+
+
+#syntac for multiple inheritance
+#class child_class_name(parent_class_name1, parent_class_name2, parent_class_name3):
+#    pass
+
+class A1:
+    print ('Hello I am in base class')
+class B(A1):
+    print ('Hello I am in derived class')
+ob1 = A1() #Hello I am in base class #Hello I am in derived class
+
+class Point:
+    def set_cordinates(self,x,y):
+        self.x=x
+        self.y=y
+
+class new_point(point):
+    def draw(self):
+        print('locate point x :',self.x,' on x axis')
+        print('locate point y :',self.y,' on y axis')
+
+p=new_point()
+p.set_cordinates(10,20)
+p.draw() #locate point x : 10  on x axis #locate point y : 20  on y axis
+
+#subclass accessing attributes of parent class
+
+class A2:
+    i=0
+    j=0
+    def Showij(self):
+        print('i : ',self.i, ' j : ',self.j)
+class B2(A2):
+    k=0
+    def Showijk(self):
+        print('i : ',self.i, ' j : ',self.j, ' k : ',self.k)
+    def sum(self):
+        print('i+j+k : ',self.i+self.j+self.k)
+
+ob1=A2()
+ob2=B2()
+ob1.i=100
+ob1.j=200
+print('ob1 : ')
+ob1.Showij() #ob1 : #i :  100  j :  200
+
+ob2.i=100
+ob2.j=200
+ob2.k=300
+print('ob2 : ')
+ob2.Showij() #ob2 : #i :  100  j :  200
+ob2.Showijk() #ob2 : #i :  100  j :  200  k :  300
+ob2.sum() #ob2 : #i+j+k :  600
+
+#multilevel inheritance
+class A3:
+    name=' '
+    age=0
+
+class B3(A3):
+    height=' '
+
+class C3(B3):
+    weight=' '
+
+    def Read(self):
+        print('Please enter the following values')
+        self.name=input('Enter name : ')
+        self.age=int(input('Enter age : '))
+        self.height=input('Enter height : ')
+        self.weight=input('Enter weight : ')
+
+    def Display(self):
+        print('Name : ',self.name)
+        print('Age : ',self.age)
+        print('Height : ',self.height)
+        print('Weight : ',self.weight)
+
+ob1=C3()
+ob1.Read()
+ob1.Display()
+
+class A4:
+    a=0
+
+class B4:
+    b=0
+
+class C4(A4,B4):
+    c=0
+
+    def Read(self):
+        self.a=int(input('Enter a : '))
+        self.b=int(input('Enter b : '))
+        self.c=int(input('Enter c : '))
+
+    def Display(self):
+        print('a : ',self.a)
+        print('b : ',self.b)
+        print('c : ',self.c)
+
+ob1=C4()
+ob1.Read()
+ob1.Display()
+
+#super() function
+
+#super() function is used to call the constructor of the parent class
+
+#super().__init__(parameters)
+#super(DerivedClassName, self).__init__(parameters)
+
+class Demo3:
+    a=0
+    b=0
+    c=0
+    def __init__(self,a,b,c):
+        self.a=a
+        self.b=b
+        self.c=c
+    def Display(self):
+        print('a : ',self.a)
+        print('b : ',self.b)
+        print('c : ',self.c)
+
+class NewDemo(Demo3):
+    d=0
+    def __init__(self,a,b,c,d):
+        super().__init__(a,b,c)
+        self.d=d
+    def Display(self):
+        print('a : ',self.a)
+        print('b : ',self.b)
+        print('c : ',self.c)
+        print('d : ',self.d)
+
+ob1=Demo3(10,20,30,40)
+ob1.Display()
+ob2.NewDemo(10,20,30,40)
+ob2.Display()
+
