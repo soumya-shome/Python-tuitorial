@@ -67,24 +67,37 @@ Literals / Datatypes<br>
 |[Generators](generators.py) | 1. using yield </br> 2. using yield with arguments </br> 3. using yield with arguments and return value |
 |[Closures](closures.py) | 1. using nested function </br> 2. using nested function with arguments </br> 3. using nested function with arguments and return value </br> 4. using nested function with arguments and return value |
 |[Iterators](iterators.py) | 1. using iter() </br> 2. using iter() with arguments </br> 3. using iter() with arguments and return value |
-|Classes and Objects | 1. Class </br> 2. Object </br> 3. Constructor </br> 4. Self </br> 5. Instance Variables </br> 6. Class Variables </br> 7. Static Methods </br> 8. Inheritance </br> 9. Overriding Methods </br> 10. Data Hiding |
-|Modules | 1. Importing Modules </br> 2. Importing from Modules </br> 3. Importing Specific Items </br> 4. Importing with Alias </br> 5. Importing Everything |
-|File Handling | 1. Opening a File </br> 2. Reading a File </br> 3. Writing to a File </br> 4. Appending to a File </br> 5. Closing a File |
-|Exception Handling | 1. Try </br> 2. Except </br> 3. Finally </br> 4. Raise </br> 5. Assert |
-|Regular Expressions | 1. Match </br> 2. Search </br> 3. Sub </br> 4. Subn </br> 5. Group </br> 6. Flags |
-|Multithreading | 1. Thread </br> 2. Starting a Thread </br> 3. Starting a Thread with Arguments </br> 4. Starting a Thread with Keyword Arguments </br> 5. Starting a Thread with Both Arguments and Keyword Arguments |
-|Networking | 1. Client </br> 2. Server |
-|Database | 1. Connecting to a Database </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data </br> 5. Updating Data </br> 6. Deleting Data |
-|GUI | 1. Label </br> 2. Button </br> 3. Entry </br> 4. Text </br> 5. Frame </br> 6. Checkbutton </br> 7. Radiobutton </br> 8. Listbox </br> 9. Menu </br> 10. Message </br> 11. OptionMenu </br> 12. Scale </br> 13. Scrollbar </br> 14. Toplevel |
-|Web Scraping | 1. BeautifulSoup </br> 2. Scraping a Webpage </br> 3. Scraping Multiple Webpages |
-|Sending Emails | 1. SMTP </br> 2. Sending a Plain Text Email </br> 3. Sending an HTML Email </br> 4. Sending an Email with Attachment |
-|Python - MySQL | 1. Connecting to MySQL </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
-|Python - MongoDB | 1. Connecting to MongoDB </br> 2. Creating a Collection </br> 3. Inserting Data </br> 4. Selecting Data |
-|Python - SQLite | 1. Connecting to SQLite </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
-|Python - PostgreSQL | 1. Connecting to PostgreSQL </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
-|Python - XML | 1. Parsing XML </br> 2. Creating XML </br> 3. Modifying XML </br> 4. Deleting XML |
-|Python - JSON | 1. Parsing JSON </br> 2. Creating JSON </br> 3. Modifying JSON </br> 4. Deleting JSON |
-|Python - YAML | 1. Parsing YAML </br> 2. Creating YAML </br> 3. Modifying YAML </br> 4. Deleting YAML |
-|Python - CSV | 1. Reading CSV </br> 2. Writing to CSV </br> 3. Appending to CSV </br> 4. Deleting CSV |
-|Python - Excel | 1. Reading Excel </br> 2. Writing to Excel </br> 3. Appending to Excel </br> 4. Deleting Excel |
+|[Classes and Objects](class_objects.py) | 1. Class </br> 2. Object </br> 3. Constructor </br> 4. Self </br> 5. Instance Variables </br> 6. Class Variables </br> 7. Static Methods </br> 8. Inheritance </br> 9. Overriding Methods </br> 10. Data Hiding |
+|[Modules](Modules.py)| 1. Importing Modules </br> 2. Importing from Modules </br> 3. Importing Specific Items </br> 4. Importing with Alias </br> 5. Importing Everything |
+|[File Handling](File_Handling.py) | 1. Opening a File </br> 2. Reading a File </br> 3. Writing to a File </br> 4. Appending to a File </br> 5. Closing a File |
+|[Exception Handling](Exception_handling.py) | 1. Try </br> 2. Except </br> 3. Finally </br> 4. Raise </br> 5. Assert |
+|[Regular Expressions](Regular_expressions.py) | 1. Match </br> 2. Search </br> 3. Sub </br> 4. Subn </br> 5. Group </br> 6. Flags |
+|[Multithreading](Multithreading.py) | 1. Thread </br> 2. Starting a Thread </br> 3. Starting a Thread with Arguments </br> 4. Starting a Thread with Keyword Arguments </br> 5. Starting a Thread with Both Arguments and Keyword Arguments |
+|[Database](Database.py) |   1. Connecting to a Database </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data </br> 5. Updating Data </br> 6. Deleting Data |
 
+## Python - Different Connections
+| Connection | Description |
+| --- | --- |
+| MySQL | 1. Connecting to MySQL </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
+| MongoDB | 1. Connecting to MongoDB </br> 2. Creating a Collection </br> 3. Inserting Data </br> 4. Selecting Data |
+| SQLite | 1. Connecting to SQLite </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
+| PostgreSQL | 1. Connecting to PostgreSQL </br> 2. Creating a Table </br> 3. Inserting Data </br> 4. Selecting Data |
+| XML | 1. Parsing XML </br> 2. Creating XML </br> 3. Modifying XML </br> 4. Deleting XML |
+| JSON | 1. Parsing JSON </br> 2. Creating JSON </br> 3. Modifying JSON </br> 4. Deleting JSON |
+| YAML | 1. Parsing YAML </br> 2. Creating YAML </br> 3. Modifying YAML </br> 4. Deleting YAML |
+| CSV | 1. Reading CSV </br> 2. Writing to CSV </br> 3. Appending to CSV </br> 4. Deleting CSV |
+| Excel | 1. Reading Excel </br> 2. Writing to Excel </br> 3. Appending to Excel </br> 4. Deleting Excel |
+
+## Python - Web
+
+| Web | Description |
+| --- | --- |
+|Web Scraping | 1. BeautifulSoup </br> 2. Scraping a Webpage </br> 3. Scraping Multiple Webpages |
+|Networking | 1. Client </br> 2. Server |
+|Sending Emails | 1. SMTP </br> 2. Sending a Plain Text Email </br> 3. Sending an HTML Email </br> 4. Sending an Email with Attachment |
+
+## Python - GUI
+
+| GUI | Description |
+| --- | --- |
+|GUI | 1. Label </br> 2. Button </br> 3. Entry </br> 4. Text </br> 5. Frame </br> 6. Checkbutton </br> 7. Radiobutton </br> 8. Listbox </br> 9. Menu </br> 10. Message </br> 11. OptionMenu </br> 12. Scale </br> 13. Scrollbar </br> 14. Toplevel |

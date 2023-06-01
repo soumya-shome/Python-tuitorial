@@ -299,6 +299,11 @@ print(isinstance(ob3,B)) #False
 print(isinstance(ob1,(A,B,C))) #True
 print(isinstance(ob3,C)) #True
 
+#polymorphism
+
+#Polymorphism is the ability of the object to take many forms
+#Polymorphism is achieved by method overloading and method overriding
+
 #Method Overloading
 
 #Method Overloading is not supported in Python
@@ -397,6 +402,79 @@ ob2 = CmpOprDemo(30)
 print(ob1 < ob2) #True
 print(ob1 > ob2) #False
 print(ob1 <= ob2) #True
+
+#Method Overriding
+
+#Method Overriding is the ability of the child class to change the implementation of the method inherited from the parent class
+
+class A5():
+    i=0
+    def display(self):
+        print(' I am in super class')
+
+class B5(A5):
+    i=0
+    def display(self):
+        print(' I am in sub class')
+
+D1=B5()
+D1.display() #I am in sub class
+
+class A6:
+    i=0
+    def display(self):
+        print(' I am in super class')
+
+class B6(A6):
+    i=0
+    def display(self):
+        print(' I am in sub class')
+        super.display()
+
+D1=B6()
+D1.display() #I am in sub class #I am in super class
+
+class A7(object):
+    def Display(self):
+        print('I am in class A')
+
+class B7(A7):
+    def Display(self):
+        print('I am in class B')
+        A7.Display(self)
+
+class C7(A7):
+    def Display(self):
+        print('I am in class C')
+        A7.Display(self)
+
+class D7(B7,C7):
+    def Display(self):
+        print('I am in class D')
+        B7.Display(self)
+        C7.Display(self)
+
+ob1=D7()
+ob1.Display() #I am in class D #I am in class B #I am in class A #I am in class C #I am in class A
+
+class A8(object):
+    def Display(self):
+        print('I am in class A')
+class B8(A8):
+    def Display(self):
+        print('I am in class B')
+        super().Display()
+class C8(A8):
+    def Display(self):
+        print('I am in class C')
+        super().Display()
+class D8(B8,C8):
+    def Display(self):
+        print('I am in class D')
+        super().Display()
+
+ob1=D8()
+ob1.Display() #I am in class D #I am in class B #I am in class C #I am in class A
 
 #inheritance
 
@@ -557,4 +635,50 @@ ob1=Demo3(10,20,30,40)
 ob1.Display()
 ob2.NewDemo(10,20,30,40)
 ob2.Display()
+
+#encapsulation
+
+#encapsulation is the process of binding the data members and member functions into a single unit
+#encapsulation is also called as data hiding
+#encapsulation is achieved by declaring the data members as private
+
+#Data Hiding
+
+#Data Hiding is the ability of the class to hide its data members from outside world
+#Data Hiding is achieved by declaring the data members as private
+
+#Private data members are accessed only within the class
+
+class A9:
+    __i=0
+    def Display(self):
+        print('I am in class A')
+        print('i : ',self.__i)
+
+ob1=A9()
+ob1.Display() #I am in class A #i :  0
+print(ob1.__i) #AttributeError: 'A9' object has no attribute '__i'
+
+class A10:
+    __i=0
+    def Display(self):
+        print('I am in class A')
+        print('i : ',self.__i)
+
+ob1=A10()
+ob1.Display() #I am in class A #i :  0
+print(ob1._A10__i) #0
+
+class A11:
+    __i=0
+    def Display(self):
+        print('I am in class A')
+        print('i : ',self.__i)
+    
+    def Set(self):
+        self.__i=int(input('Enter i : '))
+
+ob1=A11()
+ob1.Set()
+ob1.Display() #I am in class A #i :  10
 
